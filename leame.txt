@@ -1,0 +1,36 @@
+Instrucciones para levantar el proyecto
+
+
+
+Clonar el repositorio:
+
+
+git clone https://github.com/sniperwolf2315/pruebatecnica.git
+cd prueba
+Instalar dependencias:
+
+
+composer install
+npm install
+Configurar variables de entorno:
+
+
+cp .env.example .env
+php artisan key:generate
+Configurar base de datos en el archivo .env y ejecutar migraciones:
+
+
+
+php artisan migrate
+Compilar los assets:
+
+
+
+npm run dev
+Iniciar el servidor de desarrollo:
+
+
+php artisan serve
+
+
+de igual manera adjunto archivo archivo con db en sql para ser utilizada en mysql el nombre del archivo es pruebatecnica.sql
